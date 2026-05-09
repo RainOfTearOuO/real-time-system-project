@@ -138,7 +138,6 @@ def _try_to_generate_period_tasks():
     for i in range(1, num_tasks + 1):
         task_id = f"p{i}"
         # 1-4. 6 <= p_j <= 24
-        # 為讓gcd變大，優先選擇72的因數作為period值
         p = random.randint(6, 24)
 
         # 1-4. 1 <= e_j <= 4
